@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import "./styles.css";
-import HomePage from "./homepage";
+import HomePage from "./homepage.jsx";
+import Gallery from "./gallery.jsx";
+import About from "./about.jsx";
 
-const DisplayArea = () => {
+const DisplayArea = (props) => {
 
     return (
         <div className="display_area">
-            <HomePage />
+            {props.loggedPage == "home" ? <HomePage /> : <></>}
+            {props.loggedPage == "gallery" ? <Gallery /> : <></>}
+            {props.loggedPage == "about" ? <About /> : <></>} 
         </div>
     )
 }
