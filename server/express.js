@@ -1,10 +1,13 @@
 import express from "express";
 import dotenv from "dotenv";
 import pg from "pg";
+import cors from "cors";
 const { Client } = pg;
 
 const app = express();
 app.use(express.static("public"));  //<-- right after `app` is created and before routes
+
+app.use(cors());
 
 dotenv.config();  //<-- has to be before 'process.env' is called
 const port = process.env.PORT || 3000;
