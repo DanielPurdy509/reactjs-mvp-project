@@ -1,0 +1,96 @@
+.app {
+  display: flex;
+  flex-direction: row;
+}
+
+.page_logo{
+    height: 100px;
+    width: 100px;
+    margin-top: 75px;
+  }
+
+.page_name{
+  color: white;
+  font-family: Cedarville Cursive;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+}
+  
+.navbar{
+    height: 100vh;
+    width: 200px;
+    position: fixed;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav_button{
+    background-color: black;
+    color: white;
+    margin: 10px;
+}
+
+.nav_button:hover{
+    transform: scale(1.2);
+}
+
+.display_area{
+  position: relative;
+  height: 100vh;
+  width:1100px;
+  background-color: gray;
+  margin-left: 200px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  align-content: center;
+}
+
+/* .homepage_container{
+  height: 100px;
+  overflow: scroll;
+  background-color: gray;
+  width: 100px;
+} */
+
+.home_photo{
+  width:1100px;
+  height: auto;
+}
+
+.headline{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.connect_banner{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  color: black;
+  text-align: center;
+  padding: 20px;
+}
+
+.connect_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding:10px;
+}
+
+.connect_logo{
+  height: 200px;
+  width: 200px;
+  padding: 10px;
+}
+
+.connect_logo:hover{
+  transform: scale(1.1);
+}
